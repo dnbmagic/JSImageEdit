@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  JSImageEdit:
+    image: transloadit/companion
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /app/node_modules
+      - /mnt/JSImageEdit-server-data:/mnt/JSImageEdit-server-data
+    ports:
+      - '3020:3020'
+    env_file:
+      - .env
