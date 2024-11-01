@@ -1,0 +1,35 @@
+{
+  "name": "@JSImageEdit/box",
+  "description": "Import files from Box, into JSImageEdit.",
+  "version": "2.1.4",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "type": "module",
+  "types": "types/index.d.ts",
+  "keywords": [
+    "file uploader",
+    "JSImageEdit",
+    "JSImageEdit-plugin",
+    "box"
+  ],
+  "homepage": "https://JSImageEdit.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/JSImageEdit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/JSImageEdit.git"
+  },
+  "dependencies": {
+    "@JSImageEdit/companion-client": "workspace:^",
+    "@JSImageEdit/provider-views": "workspace:^",
+    "@JSImageEdit/utils": "workspace:^",
+    "preact": "^10.5.13"
+  },
+  "peerDependencies": {
+    "@JSImageEdit/core": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
